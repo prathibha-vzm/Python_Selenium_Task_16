@@ -19,7 +19,7 @@ class WorldCounts:
 
     #This method is used to locate the test_population counting element and handling Exception that might occur
     #Used wait to find the element
-    def population_counts(self):
+    def get_population_counts(self):
         try:
              counter=self.wait.until(expected_conditions.visibility_of_element_located(self.counter_ticker))
              return counter
@@ -27,7 +27,7 @@ class WorldCounts:
             print("TimeOut Exception")
 
     #This method is used to locate the cookies in the page and click on it, Handled the exception
-    def dismiss_cookies(self):
+    def click_dismiss_cookies(self):
         try:
             dismissing = self.fluent_wait.until(expected_conditions.visibility_of_element_located(self.cookies))
             if dismissing.is_displayed(): #If the element is located, it will be clicked
