@@ -23,8 +23,8 @@ def test_world_counts(set_up):
         except (TimeoutException,ElementNotVisibleException):  #Exceptions are handled
             print("Press Ctrl+C to Stop")
 
-if __name__=='__main__':
-    test_world_counts()
+if __name__=='__main__': # To run the code on Terminal
+    test_world_counts()  #Calling the test logic method
 
 
 
