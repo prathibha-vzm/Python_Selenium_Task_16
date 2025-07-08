@@ -11,7 +11,7 @@ import keyboard #Keyboard is imported to check the keyboard activity
 def test_world_counts(set_up):
     driver=set_up
     world_count=WorldCounts(driver) # Creating object for class
-    counter = get_world_count.population_counts() #Calling the methods
+    counter = world_count.get_population_counts() #Calling the methods
     world_count.click_dismiss_cookies()
     print("\nWorld Population")
     while True:
